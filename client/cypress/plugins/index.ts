@@ -26,7 +26,12 @@ module.exports = (on, config) => {
   on('dev-server:start', (options: any) => {
     const viteConfig = {
       ...myViteConfig,
-      plugins: [react({exclude: '**/*.tsx',})]
+      plugins: [react({exclude: '**/*.tsx',})],
+      server: {
+        fs: {
+          strict: false
+        }
+      },
     };
     return startDevServer({options, viteConfig});
   });
