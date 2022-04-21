@@ -5,17 +5,22 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cypress:open-ct": "cypress open-ct"
   },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@cypress/react": "^5.12.4",
+    "@cypress/vite-dev-server": "^2.2.2",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
+    "cypress": "^9.5.4",
     "typescript": "^4.6.3",
-    "vite": "^2.9.5"
+    "vite": "^2.9.5",
+    "vite-plugin-eslint": "^1.5.2"
   }
 }
